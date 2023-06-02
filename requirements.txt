@@ -1,0 +1,12 @@
+dash==2.10.0
+plotly==5.11.0
+pandas==1.5.2
+py3dbp==1.1.2
+ortools==9.5.2237
+setuptools==65.5.1
+gunicorn==20.1.0
+dash-mantine-components==0.10.2
+dash-iconify==0.1.2
+dash-bootstrap-components==1.2.1
+dash-ag-grid==2.0.0
+gunicorn==20.1.0

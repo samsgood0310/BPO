@@ -1,0 +1,3 @@
+﻿bin_name,bin_weight,number_of_items_in_bin,items_in_bin,number_of_items_not_in_bin,items_not_in_bin
+con_s,30.000,15,"[['boxB_0', 'boxB_1', 'boxB_2', 'boxB_3', 'boxB_4', 'boxA_0', 'boxA_1', 'boxA_2', 'boxA_3', 'boxA_4', 'boxC_0', 'boxC_1', 'boxC_2', 'boxC_3', 'boxC_4']]",10,"[['boxE_0', 'boxE_1', 'boxE_2', 'boxE_3', 'boxE_4', 'boxD_0', 'boxD_1', 'boxD_2', 'boxD_3', 'boxD_4']]"
+con_m,40.000,20,"[['boxB_0', 'boxB_1', 'boxB_2', 'boxB_3', 'boxB_4', 'boxA_0', 'boxA_1', 'boxA_2', 'boxA_3', 'boxA_4', 'boxC_0', 'boxC_1', 'boxC_2', 'boxC_3', 'boxC_4', 'boxE_0', 'boxE_1', 'boxE_2', 'boxE_3', 'boxE_4']]",5,"[['boxD_0', 'boxD_1', 'boxD_2', 'boxD_3', 'boxD_4']]"
