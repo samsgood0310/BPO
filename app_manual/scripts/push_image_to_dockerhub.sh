@@ -8,6 +8,7 @@
 ## Make sure to remove your DOCKERHUB_PASSWORD before committing or saving this file
 ## --------------------------------------------------------------------------------
 
+set -e
 
 # Set the parameters
 IMAGE_NAME="bpo-image"

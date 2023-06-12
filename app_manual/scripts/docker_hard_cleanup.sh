@@ -12,6 +12,7 @@
 ## This script have no turn back
 ## --------------------------------------------------------------------------------
 
+set -e
 
 # About section
 echo "Docker Cleanup Script"

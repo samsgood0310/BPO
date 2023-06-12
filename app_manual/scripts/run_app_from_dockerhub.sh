@@ -1,9 +1,9 @@
 #!/bin/bash
-
 ## --------------------------------------------------------------------------------
 ## Purpose: Running the docker image from docker-hub
 ## --------------------------------------------------------------------------------
 
+set -e
 
 # Check if Docker service is running and start if not
 if ! systemctl is-active --quiet docker; then

@@ -11,6 +11,7 @@
 ## This script has no turn back.
 ## --------------------------------------------------------------------------------
 
+set -e
 
 # Move to the root directory of the project
 cd ../..

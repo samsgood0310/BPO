@@ -9,7 +9,7 @@
 
 **To run BPO now:**      
 ```Bash
-docker run --name bpo_app -d -p 8080:8050 asafbm/bpo:latest && xdg-open http://127.0.0.1:8080/
+docker run --name bpo_app -d -p 8080:8050 asafbm/bpo:latest
 ```
 ---
 <img src="app/assets/pictures/bpo_logo.png" align="right" style="width: 30%;" align="top" />
