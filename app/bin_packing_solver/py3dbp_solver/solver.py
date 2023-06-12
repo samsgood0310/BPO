@@ -1,8 +1,13 @@
-"""
-This module contain the Bin Packing solver and create the 3d fig.
-The code is based on the following example
-https://stackoverflow.com/questions/71318810/interactive-3d-plot-with-right-aspect-ratio-using-plotly
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# This module contain the Bin Packing solver and create the 3d fig.
+# The code is based on the following example
+# https://stackoverflow.com/questions/71318810/interactive-3d-plot-with-right-aspect-ratio-using-plotly
+# ************************************************************************************
+#
+
 
 from py3dbp import Bin, Item, Packer
 

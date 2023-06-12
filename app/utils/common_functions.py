@@ -1,15 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import base64
 import os
 
-from app.logs.app_logger import Logger
-
+from app.logs.app_logger import ErrorHandler, Logger
 
 logger = Logger(__name__)
+log_and_handle_errors = ErrorHandler(logger)
+
 
 # get the absolute path of the current script
 abs_path = os.path.abspath(__file__)
 
 
+@log_and_handle_errors
 def get_picture(name):
 
     # go up two directories to get to the root directory of your project

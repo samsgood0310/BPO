@@ -1,9 +1,14 @@
-"""
-This module write to a local file the solution on the solver.
-The local file will contain a record per each bin with the items that will be stored in them.
-In addition to that each item in the bin will have his location in the bin (x,y,z).
-The User will be able to download the file.
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# This module write to a local file the solution on the solver.
+# The local file will contain a record per each bin with the items that will be stored in them.
+# In addition to that each item in the bin will have his location in the bin (x,y,z).
+# The User will be able to download the file.
+# ************************************************************************************
+#
+
 import pandas as pd
 
 from app.bin_packing_solver.py3dbp_solver import connection_bp_to_db

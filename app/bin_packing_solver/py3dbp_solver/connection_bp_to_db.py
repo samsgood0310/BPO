@@ -1,10 +1,15 @@
-"""
-The purpose of this module is to translate and connect the solver and the user input.
-The user uploads csv files that are easy to read (and write), and the algorithm need to get information in a certain way
-So the module solved the gap with the above functions.
-It's also important to keep as undefended and modular each file / module, for that reason all the calls from the
-bin_packing_solver to the system data will be using this module.
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# The purpose of this module is to translate and connect the solver and the user input.
+# The user uploads csv files that are easy to read (and write), and the algorithm need to get information in a certain
+# way So the module solved the gap with the above functions.
+# It's also important to keep as undefended and modular each file / module, for that reason all the calls from the
+# bin_packing_solver to the system data will be using this module.
+# ************************************************************************************
+#
+
 import pandas as pd
 
 from app.logs.app_logger import ErrorHandler, Logger

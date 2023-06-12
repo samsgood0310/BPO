@@ -1,7 +1,10 @@
-"""
-This page will be used for letting the user configure the algorithm that he wants to use and with what parameters
-As for the current version of the app there is only one type of Algorithm so this page won't be active.
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# Solver page of the app, part of "dash-plotly multi-page structure"
+# ************************************************************************************
+#
 import base64
 import datetime
 import io

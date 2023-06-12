@@ -1,6 +1,11 @@
-"""
-This module is used for calculating the KPI's of the
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# This module is used for calculating the KPI's of the packing results / user-input.
+# ************************************************************************************
+#
+
 
 import ast
 from collections import Counter
@@ -8,8 +13,13 @@ from collections import Counter
 import pandas as pd
 
 from app.system_data import app_data_handler, const_system_data
+from app.logs.app_logger import ErrorHandler, Logger
+
+logger = Logger(__name__)
+log_and_handle_errors = ErrorHandler(logger)
 
 
+@log_and_handle_errors
 def __get_pecked_formatted_bin_df():
     bins_df = app_data_handler.get_csv_file(const_system_data.result_file_path['all_bins'])
     bins_df['items_not_in_bin'] = bins_df['items_not_in_bin'].apply(lambda x: ast.literal_eval(x)[0])
@@ -17,6 +27,7 @@ def __get_pecked_formatted_bin_df():
     return bins_df
 
 
+@log_and_handle_errors
 def __get_input_containers_df():
     containers_merged = pd.merge(
         app_data_handler.get_csv_file(const_system_data.input_file_path['container_properties']),
@@ -26,6 +37,7 @@ def __get_input_containers_df():
     return containers_merged_named
 
 
+@log_and_handle_errors
 def __get_input_boxes_df():
     containers_merged = pd.merge(
         app_data_handler.get_csv_file(const_system_data.input_file_path['box_properties']),
@@ -35,6 +47,7 @@ def __get_input_boxes_df():
     return containers_merged_named
 
 
+@log_and_handle_errors
 def calc_bins_kpis():
     # calculate the KPIs
     df = __get_pecked_formatted_bin_df()
@@ -44,6 +57,7 @@ def calc_bins_kpis():
     return total_items, unpacked_items, percent_packed
 
 
+@log_and_handle_errors
 def calc_boxes_packed_ratio():
     def __calc_boxes_in_bins_per_box_type():
         df = __get_pecked_formatted_bin_df()
@@ -71,6 +85,7 @@ def calc_boxes_packed_ratio():
     return results
 
 
+@log_and_handle_errors
 def calc_weight_ratio():
     def __calc_weight(items_df):
         return (items_df['w'] * items_df['amount']).sum()
@@ -82,6 +97,7 @@ def calc_weight_ratio():
     return total_packed_boxes_weight, total_input_boxes_weight, total_input_bins_weight
 
 
+@log_and_handle_errors
 def calculate_bin_utilization():
     packed_bins_df = __get_pecked_formatted_bin_df()
     input_bins_df = __get_input_containers_df()
@@ -115,6 +131,7 @@ def calculate_bin_utilization():
     return utilizations, total_utilization_str
 
 
+@log_and_handle_errors
 def collect_kpis_to_report():
     """
     This function collects all the calculation functions and formats their outputs into one dictionary with all the

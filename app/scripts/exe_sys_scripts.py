@@ -1,15 +1,26 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# This module execture bash scripts that triggered by the app
+# ************************************************************************************
+#
+
 import os
 import subprocess
 from pathlib import Path
-from app.logs.app_logger import Logger
+from app.logs.app_logger import Logger, ErrorHandler
 
 logger = Logger(__name__)
+log_and_handle_errors = ErrorHandler(logger)
 
 
+@log_and_handle_errors
 def run_bash_script(bash_script_name: str) -> None:
     """ This function is used for running bash scripts from the 'scripts' directory. """
     try:
         abs_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'scripts'))
+
         # Change the permission of the script file to make it executable
         script_path = Path(__file__).parent / f"{bash_script_name}.sh"
         logger.info(f'bash script was triggered: {script_path}')

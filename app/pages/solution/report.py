@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# KPI report page of the app, part of "dash-plotly multi-page structure"
+# ************************************************************************************
+#
+
 from dash import Input, Output, callback, html, register_page
 
 from app.assets import style_consts

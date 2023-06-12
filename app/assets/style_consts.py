@@ -1,6 +1,7 @@
-"""
-app styles static objects
-"""
+#
+# app styles static objects
+#
+
 COLORS = {
     "c1": "#ebf7ff",
     "white": "#F5FFFA",
@@ -10,9 +11,9 @@ COLORS = {
 
 MAIN_APP_PAGE_BACKGROUND = "#f1f7fd"
 
-"""
-main.py
-"""
+#
+# main.py
+#
 APP_TOP_MARGIN = {
     'backgroundColor': '#033454',
     'text': '#F5FFFA',
@@ -40,7 +41,7 @@ NAV_LINK_STYLE = {
 }
 
 LOGO_NAME = 'img_2'
-"""------------------------------------------------------------------------------------------------------------------"""
+
 DEFAULT_COMPONENT_CENTER = {
     'textAlign': 'center',
     'backgroundColor': MAIN_APP_PAGE_BACKGROUND,
@@ -52,7 +53,7 @@ MAIN_3D_LAYOUT_STYLE = {
     'marginLeft': '8%'
 }
 
-"""------------------------------------------------MAIN PAGE GADGETS------------------------------------------------"""
+# -----------------------------------------------MAIN PAGE GADGETS------------------------------------------------
 
 SIDE_BUTTON_STYLE = {
     'size': '33',
@@ -157,7 +158,7 @@ DROP_FILES_AREA_STYLE = {'width': '50%',
                          'textAlign': 'center',
                          'marginLeft': '15%'}
 
-"""--------------------------------------------- 3D GRAPH LEGEND STYLING --------------------------------------------"""
+# --------------------------------------------- 3D GRAPH LEGEND STYLING --------------------------------------------
 
 
 LEGEND_DIV_WRAPPER = {

@@ -1,12 +1,11 @@
-"""
-____MODEL_INFO____
-Need to create two pages,
-One for the definition of the box, item.
-And the other is for other is for amount of bins, boxes of the current problem.
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# Boxes page of the app, part of "dash-plotly multi-page structure"
+# ************************************************************************************
+#
 
-This way we will have 4 dcc store for each user dataframe.
-Might use definition
-"""
 import dash_mantine_components as dmc
 from dash import Input, Output, callback, dcc, html, register_page
 from dash.dependencies import State

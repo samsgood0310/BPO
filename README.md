@@ -1,15 +1,22 @@
 
 <h1 align="center"><b>Bin Packing Optimization</b></h1>
 
+![BPO App](app/assets/gif/demo.gif)
 
-<img src="app/assets/pictures/bpo_logo.png" align="right" style="width: 30%;" align="top" />
 
 <a href="https://www.linkedin.com/in/asafbm/"><img src="https://img.shields.io/badge/-Asaf%20Ben%20Menachem-blue?style=plastic&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/asafbm/" /></a>
 <a href="https://hub.docker.com/repository/docker/asafbm/bpo/general"><img src="https://img.shields.io/badge/-Bin%20Packing%20Optimization-blue?style=plastic&logo=Docker&logoColor=white&link=https://www.linkedin.com/in/asafbm/" /></a>    
 
+**To run BPO now:**      
+```Bash
+docker run --name bpo_app -d -p 8080:8050 asafbm/bpo:latest && xdg-open http://127.0.0.1:8080/
+```
+---
+<img src="app/assets/pictures/bpo_logo.png" align="right" style="width: 30%;" align="top" />
+
 ### What is BPO?
   **Bin Packing Optimization** (BPO) is a free and open-source application solving 3D bin packing problems. 
-  The Application Framework based on Dash-Plotly and is very modular and can be easily customized and fit any specific problem, requirements and limitations.
+  The Application Framework based on 'Dash-Plotly Multi page' structure and is very modular and can be easily customized and fit any specific problem, requirements and limitations.
 
 
 ### How does BPO Application work?
@@ -19,9 +26,11 @@
 ___
 
 ### HOW2's:
-* [HOW2 Run the app](Application_Guidelines/HOW2_Run_the_app.md)
-* [HOW2 use Docker for Dash Apps](Application_Guidelines/HOW2_use_Docker_4_Dash_apps.md)
+* [How 2 run the app](app_manual/How_to_run_the_app.md)
+* [How 2 use Docker for Dash Apps](app_manual/Docker+Dash.md)
 
 ### More-Info:
-* [Application_Structure](Application_Guidelines/Application_Structure.md) 
-* [Application_Structure](Application_Guidelines/Boxes&Containers.md) 
+* [Application Structure](app_manual/Application_Structure.md) 
+* [Boxes and Containers](app_manual/Boxes & Containers.md)
+
+___

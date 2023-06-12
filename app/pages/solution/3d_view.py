@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# 3D view page of the app, part of "dash-plotly multi-page structure"
+# ************************************************************************************
+#
+
 import plotly.graph_objs
 from dash import callback, ctx, dcc, html, register_page
 from dash.dependencies import Input, Output
@@ -30,7 +38,6 @@ try:
     )
 except Exception as e:
     logger.error(f"modify_layout function didn't work {e}")
-    raise e
 
 
 @callback(

@@ -1,6 +1,11 @@
-"""
-Logging and Error classes :)
-"""
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# Logging and Error classes :)
+# ************************************************************************************
+#
+
 import functools
 import inspect
 import logging

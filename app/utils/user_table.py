@@ -1,13 +1,18 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import pandas as pd
 from dash import ctx
 
-from app.logs.app_logger import Logger
 from app.system_data import app_data_handler, const_system_data
 from app.assets import app_consts
+from app.logs.app_logger import Logger, ErrorHandler
 
 logger = Logger(__name__)
+log_and_handle_errors = ErrorHandler(logger)
 
 
+@log_and_handle_errors
 def update_table(user_table, add_btn_id, table_name):
     try:
         if not user_table:

@@ -1,13 +1,10 @@
-"""
-____MODEL_INFO____
-Need to create two pages,
-One for the definition of the container, item.
-And the other is for other is for amount of bins, containers of the current problem.
-
-This way we will have 4 dcc store for each user dataframe.
-Might use definition
-"""
-
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+#
+# ************************************************************************************
+# Containers page of the app, part of "dash-plotly multi-page structure"
+# ************************************************************************************
+#
 import dash_mantine_components as dmc
 from dash import Input, Output, callback, dcc, html, register_page
 from dash.dependencies import State
